@@ -1,5 +1,5 @@
 [![](https://img.shields.io/badge/Microverse-Dozie%20Udeagha-blueviolet)](https://github.com/udeaghad)
-[![](https://img.shields.io/badge/Microverse-Zelalem%20Zelalem-blueviolet)](https://github.com/Zelalem1222)
+[![](https://img.shields.io/badge/Microverse-Zelalem%20Fissha-blueviolet)](https://github.com/Zelalem1222)
 # Space Travelers' Hub
 
 >In this Project, We worked with the real live data from the SpaceX API. We built a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
@@ -37,7 +37,7 @@ Install
 Usage
    - Open the index.html file with your browser to view the webpage
 
-## Author
+## Authors
 
 👤 Dozie Udeagha
 
@@ -47,7 +47,7 @@ Usage
 
 👤 Zelalem Fissha
 
-- GitHub: [@Zelalem1222Zelalem1222](https://github.com/Zelalem1222)
+- GitHub: [@Zelalem1222](https://github.com/Zelalem1222)
 - Twitter: [@Zelalem52236790](https://twitter.com/Zelalem52236790)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/zelalem-fissha-52b093231/)
 
