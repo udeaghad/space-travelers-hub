@@ -1,19 +1,49 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../image/logo.png';
 import '../styles/navbar.css';
 
-const Navbar = () => (
+const Navbar = () => { 
+
+  const links = [
+
+    {
+      id: 1,
+      path: '/',
+      text: 'Rockets',
+      className: 'rocket-link'
+    },
+    {
+      id: 2,
+      path: "/missions",
+      text: 'Missions',
+      className: 'mission-link'      
+    },
+    {
+      id: 3,
+      path: "/profile",
+      text: 'Profile', 
+      className: 'profile-link'     
+    }
+  ];
+
+  return ( 
   <nav>
     <div>
       <img id="logo" src={logo} alt="Logo" />
     </div>
-    <div>
-      <Link to="/">Rockets |</Link>
-      <Link to="/missions">Missions |</Link>
-      <Link to="/profile">Profile</Link>
-    </div>
+    <ul className="navItems">
+        {links.map((link) => (
+          <li key={link.id} className={link.className}>
+            <NavLink to={link.path}>
+              {link.text}
+              {'  |'}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
   </nav>
-);
+  )
+};
 
 export default Navbar;
