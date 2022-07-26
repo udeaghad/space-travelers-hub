@@ -1,3 +1,15 @@
-.App {
-  text-align: center;
+.wrapper {
+  display: flex;
+
+  /* gap: 15px; */
+}
+
+.name-cell {
+  list-style: none;
+  width: 10%;
+}
+
+.description-cell {
+  list-style: none;
+  width: 50%;
 }
