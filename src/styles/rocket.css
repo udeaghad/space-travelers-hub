@@ -1,0 +1,9 @@
+.rocket-img {
+  width: 25%;
+}
+
+.rocket-item {
+  display: flex;
+  gap: 1%;
+  padding: 3%;
+}
