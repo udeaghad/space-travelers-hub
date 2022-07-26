@@ -1,5 +1,5 @@
 
-const FETCH_ROCKETS = 'FETCH_ROCKETS';
+const FETCH_ROCKETS = 'space-travelers-hub/rockets/FETCH_ROCKETS';
 
 
 const initialState = [];
@@ -20,9 +20,10 @@ const fetchRocketsFromApi = ()=> async(dispatch) => {
     console.log(response);
     dispatch(fetchRocket(response.map((rocket) => ({
          id:rocket.id,
-         name:rocket.name ,
-         type:rocket.type,
-         image:rocket.flickr_images
+         name:rocket.rocket_name ,
+         type:rocket.rocket_type,
+         description:rocket.description,
+         image:rocket.flickr_images,
     }))))
 }
 
