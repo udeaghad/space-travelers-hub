@@ -5,3 +5,22 @@
 nav {
   display: flex;
 }
+
+.navItems {
+  display: flex;
+  gap: 10px;
+}
+
+.rocket-link,
+.mission-link,
+.profile-link {
+  list-style: none;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
