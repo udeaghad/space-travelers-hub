@@ -17,13 +17,12 @@ const rocketReducer = (state = initialState , action) => {
 const fetchRocketsFromApi = ()=> async(dispatch) => {
     const data = await fetch('https://api.spacexdata.com/v3/rockets');
     const response = await data.json();
-    console.log(response);
     dispatch(fetchRocket(response.map((rocket) => ({
          id:rocket.id,
          name:rocket.rocket_name ,
          type:rocket.rocket_type,
          description:rocket.description,
-         image:rocket.flickr_images,
+         images:rocket.flickr_images,
     }))))
 }
 
