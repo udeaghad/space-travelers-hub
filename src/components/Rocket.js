@@ -1,6 +1,7 @@
 import React , {useEffect} from "react";
 import { useSelector , useDispatch } from "react-redux";
 import { fetchRocketsFromApi } from "../redux/rockets/rockets";
+import '../styles/rocket.css'
 
 const Rocket = () =>{
    const dispatch = useDispatch();
@@ -13,7 +14,13 @@ const Rocket = () =>{
    return (
      <div>
         {rockets.map((rocket) => (
-            <h3>{rocket.name}</h3>
+            <div className="rocket-item" key={rocket.id}>
+           <img className="rocket-img" src={rocket.images[0]} alt='rocket image' />
+            <div>
+                <h1>{rocket.name}</h1>
+                <p>{rocket.description}</p>
+            </div>
+            </div>
             
         ))}
      </div>
