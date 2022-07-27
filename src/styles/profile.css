@@ -1,15 +1,23 @@
 .profile-page {
   display: flex;
-
-  /* gap: 20%; */
   justify-content: center;
-  gap: 20%;
+  gap: 5%;
 }
 
 .reserved-rocket {
-  border: 1px solid;
-  padding: 10% 0;
-  border-radius: 13px;
+  border: 1px solid lightgrey;
+  padding: 3% 3%;
   margin: 0;
-  text-align: center;
+}
+
+.reserved-rockets-container {
+  flex: 0.5;
+}
+
+.rocket-info {
+  width: 350px;
+}
+
+.mission-profile {
+  flex: 0.5;
 }

@@ -15,3 +15,23 @@
   margin-right: 15px;
   background-color: darkcyan;
 }
+
+.cancel-reservation {
+  height: 14%;
+  color: darkgray;
+  background-color: #fff;
+  border-color: currentColor;
+  border-radius: 6px;
+  padding: 0 1%;
+  cursor: pointer;
+}
+
+.reserve-rocket {
+  height: 16%;
+  color: #fff;
+  background-color: blue;
+  border-color: currentColor;
+  border-radius: 5px;
+  padding: 0 1%;
+  cursor: pointer;
+}

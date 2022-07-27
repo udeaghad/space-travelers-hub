@@ -29,8 +29,9 @@ const Navbar = () => {
 
   return ( 
   <nav>
-    <div>
+    <div className='website-header'>
       <img id="logo" src={logo} alt="Logo" />
+      <h1>Space Travelers Hub</h1>
     </div>
     <ul className="navItems">
         {links.map((link) => (

@@ -21,10 +21,10 @@ const Profile = () => {
         </ul>
 
       </div>
-      <div className='reserved-rockets'>
+      <div className='reserved-rockets-container'>
       <h2>My Rockets</h2>
       {reservedRockets.length ? (
-        <div>
+        <div className="rocket-info">
           {reservedRockets.map((rocket) => (
             <p className='reserved-rocket' key={rocket.id}>{rocket.name}</p>
           ))}

@@ -17,14 +17,14 @@ const Rocket = () =>{
         {rockets.map((rocket) => (
             <div className="rocket-item" key={rocket.id}>
            <img className="rocket-img" src={rocket.images[0]} alt='rocket image' />
-            <div>
+            <div >
                 <h1>{rocket.name}</h1>
                 <p>
                     {rocket.reserved ? <span id="badge">Reserved</span> : null}
                     {rocket.description}
                     </p>
-                {(rocket.reserved) && (<button onClick={() => dispatch(cancelRocket(rocket.id))}>Cancel Reservation</button>) }
-                {(!rocket.reserved) && (<button onClick={() => dispatch(reserveRocket(rocket.id))}>Add Reservation</button>)}
+                {(rocket.reserved) && (<button className="cancel-reservation" onClick={() => dispatch(cancelRocket(rocket.id))}>Cancel Reservation</button>) }
+                {(!rocket.reserved) && (<button className="reserve-rocket" onClick={() => dispatch(reserveRocket(rocket.id))}>Add Reservation</button>)}
             </div>
             </div>
             
