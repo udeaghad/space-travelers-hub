@@ -10,8 +10,8 @@
 
 #badge {
   padding: 0 10px;
-  border: 1px solid cadetblue;
   color: #fff;
+  border-radius: 7px;
   margin-right: 15px;
-  background-color: aqua;
+  background-color: darkcyan;
 }
