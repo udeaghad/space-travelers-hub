@@ -7,3 +7,11 @@
   gap: 1%;
   padding: 3%;
 }
+
+#badge {
+  padding: 0 10px;
+  border: 1px solid cadetblue;
+  color: #fff;
+  margin-right: 15px;
+  background-color: aqua;
+}
