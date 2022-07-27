@@ -13,3 +13,7 @@
   list-style: none;
   width: 50%;
 }
+
+.badge {
+  border: 1px solid black;
+}
