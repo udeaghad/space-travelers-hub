@@ -13,9 +13,12 @@ const Profile = () => {
     <div>
       <div className="mission-profile">
         <h2>My Missions</h2>
+        <ul>
         {missionJoined.map(mission => ( 
-          <div key={mission.mission_id}>{mission.mission_name}</div>
+          <li key={mission.mission_id}>{mission.mission_name}</li>
         ))}
+        </ul>
+        
 
       </div>
     </div>
