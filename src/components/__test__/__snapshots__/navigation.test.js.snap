@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Jest test Match Snapshot 1`] = `
+<nav>
+  <div
+    class="website-header"
+  >
+    <img
+      alt="Logo"
+      id="logo"
+      src="logo.png"
+    />
+    <h1>
+      Space Travelers Hub
+    </h1>
+  </div>
+  <ul
+    class="navItems"
+  >
+    <li
+      class="rocket-link"
+    >
+      <a
+        aria-current="page"
+        class="active"
+        href="/"
+      >
+        Rockets
+          |
+      </a>
+    </li>
+    <li
+      class="mission-link"
+    >
+      <a
+        class=""
+        href="/missions"
+      >
+        Missions
+          |
+      </a>
+    </li>
+    <li
+      class="profile-link"
+    >
+      <a
+        class=""
+        href="/profile"
+      >
+        Profile
+          |
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
