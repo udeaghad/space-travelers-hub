@@ -6,7 +6,7 @@ import '../styles/rocket.css'
 const Rocket = () =>{
    const dispatch = useDispatch();
    const rockets = useSelector((state) => state.Rockets);
- 
+   
    useEffect(()=> {
     if(!rockets.length){
         dispatch(fetchRocketsFromApi())
