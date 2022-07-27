@@ -8,7 +8,7 @@ import Mission from '../Mission';
 
 
 describe('To test Mission components', () => {
-  test('To Missions component renders successfully!', () => {
+  test('To Test Missions component renders successfully!', () => {
     const tree = renderer
       .create(<Provider store={store}><Mission /></Provider>)
       .toJSON();
