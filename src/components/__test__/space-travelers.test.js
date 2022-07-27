@@ -1,6 +1,19 @@
 import missionReducer from '../../redux/missions/missionReducer'
 import {joinMission} from '../../redux/missions/missionAction'
+import React from 'react';
+import renderer from 'react-test-renderer';
+import { Provider } from 'react-redux';
+import store from '../../redux/configureStore';
+import Mission from '../Mission';
 
+
+describe('To test Mission components', () => {
+  test('To Missions component renders successfully!', () => {
+    const tree = renderer
+      .create(<Provider store={store}><Mission /></Provider>)
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+})
 
 test('To test join mission status', () => {
   const Mission = [
@@ -17,3 +30,7 @@ test('To test join mission status', () => {
     ]
   )
 })
+
+});
+
+
