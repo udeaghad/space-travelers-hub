@@ -2,9 +2,16 @@
   width: 15%;
 }
 
+.website-header {
+  display: flex;
+  gap: 2%;
+  align-items: center;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navItems {
