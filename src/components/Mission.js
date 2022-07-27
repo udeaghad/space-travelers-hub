@@ -38,7 +38,8 @@ return (
       
       {showMission.map(mission => (      
         
-        <tr className='wrapper' key={mission.mission_id}>
+        <tr className='wrapper' key={mission.mission_id} 
+        style={{backgroundColor: mission.join_mission? 'white': null}}>
          <td className='name-cell'>{mission.mission_name}</td>
          <td className='description-cell'>{mission.description}</td> 
           {!mission.join_mission?

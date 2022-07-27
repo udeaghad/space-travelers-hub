@@ -1,5 +1,6 @@
 .wrapper {
   display: flex;
+  background-color: gainsboro;
 }
 
 .mission-pg {
@@ -10,6 +11,11 @@
 .mission-header {
   list-style: none;
   width: 10%;
+}
+
+.name-cell {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .description-cell,
