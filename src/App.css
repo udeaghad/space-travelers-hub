@@ -1,19 +1,86 @@
 .wrapper {
   display: flex;
-
-  /* gap: 15px; */
 }
 
-.name-cell {
+.mission-pg {
+  margin-top: 36px;
+}
+
+.name-cell,
+.mission-header {
   list-style: none;
   width: 10%;
 }
 
-.description-cell {
+.description-cell,
+.descr-header {
   list-style: none;
-  width: 50%;
+  width: 59%;
 }
 
 .badge {
-  border: 1px solid black;
+  border: 1px solid gray;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: gray;
+  color: white;
+}
+
+.table-head-wrapper {
+  display: flex;
+  text-align: left;
+}
+
+.status-container {
+  width: 26.5%;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+th,
+td {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+.badge-container,
+.btn-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* padding-top: 50%; */
+}
+
+.badge-container {
+  border-right: 1px solid gray;
+}
+
+.status-header {
+  width: 25%;
+}
+
+.join-btn {
+  width: 9rem;
+  height: 36px;
+}
+
+.leave-btn {
+  width: 9rem;
+  height: 36px;
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+.active-badge {
+  border: 1px solid gray;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  color: white;
 }

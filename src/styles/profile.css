@@ -6,8 +6,9 @@
 
 .reserved-rocket {
   border: 1px solid lightgrey;
-  padding: 3% 3%;
   margin: 0;
+  padding: 4%;
+  font-size: 20px;
 }
 
 .reserved-rockets-container {
@@ -15,9 +16,28 @@
 }
 
 .rocket-info {
-  width: 350px;
+  width: 95%;
+  border: 1px solid gray;
+  border-radius: 6px;
 }
 
 .mission-profile {
   flex: 0.5;
+  margin-left: 20px;
+}
+
+.list-container {
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.mission-item {
+  border-bottom: 1px solid gray;
+  padding: 4%;
+  font-size: 20px;
 }
