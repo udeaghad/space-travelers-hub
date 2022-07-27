@@ -1,6 +1,6 @@
 import React , {useEffect} from "react";
 import { useSelector , useDispatch } from "react-redux";
-import { fetchRocketsFromApi } from "../redux/rockets/rockets";
+import { fetchRocketsFromApi , reserveRocket , cancelRocket } from "../redux/rockets/rockets";
 import '../styles/rocket.css'
 
 const Rocket = () =>{
@@ -18,7 +18,12 @@ const Rocket = () =>{
            <img className="rocket-img" src={rocket.images[0]} alt='rocket image' />
             <div>
                 <h1>{rocket.name}</h1>
-                <p>{rocket.description}</p>
+                <p>
+                    {rocket.reserved ? <span id="badge">Reserved</span> : null}
+                    {rocket.description}
+                    </p>
+                {(rocket.reserved) && (<button onClick={() => dispatch(cancelRocket(rocket.id))}>Cancel Reservation</button>) }
+                {(!rocket.reserved) && (<button onClick={() => dispatch(reserveRocket(rocket.id))}>Add Reservation</button>)}
             </div>
             </div>
             
