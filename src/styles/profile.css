@@ -1,0 +1,15 @@
+.profile-page {
+  display: flex;
+
+  /* gap: 20%; */
+  justify-content: center;
+  gap: 20%;
+}
+
+.reserved-rocket {
+  border: 1px solid;
+  padding: 10% 0;
+  border-radius: 13px;
+  margin: 0;
+  text-align: center;
+}

@@ -4,6 +4,7 @@
 
 nav {
   display: flex;
+  justify-content: space-between;
 }
 
 .navItems {
