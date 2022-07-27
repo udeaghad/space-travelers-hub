@@ -8,7 +8,7 @@ export default (state = mission, action) => {
     
     case 'JOIN_MISSION':      
       let updatedItem;  
-      let index    
+      let index;  
       state.map((item, i) => {
         if(item.mission_id === action.payload){
           updatedItem = {...item, join_mission: !item.join_mission};

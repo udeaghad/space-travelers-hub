@@ -12,12 +12,10 @@ useEffect(() => {
 }, []);
 
 const showMission = useSelector(state => state.Mission)
-console.log(showMission)
 
 const handleClick = (e) => {
   let payload = e.target.id
   dispatch(joinMission(payload))
-  console.log(showMission)
   }
 
 return (
@@ -29,9 +27,18 @@ return (
          <li className='name-cell'>{mission.mission_name}</li>
          <li className='description-cell'>{mission.description}</li> 
           {!mission.join_mission &&
-          <button id={mission.mission_id} onClick={(e) => handleClick(e)}>Remove</button>}
+          <div>
+          <button type='button'>NOT A MEMBER</button>
+          <button type='button' id={mission.mission_id} onClick={(e) => handleClick(e)}>JOIN MISSION</button>
+          </div>
+          }
+          
           {mission.join_mission &&
-          <button id={mission.mission_id} onClick={(e) => handleClick(e)}>Delete</button>}   
+          <div>
+            <button type='button'>ACTIVE MEMBER</button>
+          <button type='button' id={mission.mission_id} onClick={(e) => handleClick(e)}>LEAVE MISSION</button>
+          </div>
+          }   
         </ul>
       
        
