@@ -6,16 +6,22 @@ export default (state = mission, action) => {
       
       return action.payload;
     
-    case 'JOIN_MISSION':
-     state.map(item => {
-      if(item.mission_id === action.payload){
-        return {
-          ...state,
-          join_mission: !state.join_mission,
-        };
-      }
-     })
-
+    case 'JOIN_MISSION':      
+      let updatedItem;  
+      let index    
+      state.map((item, i) => {
+        if(item.mission_id === action.payload){
+          updatedItem = {...item, join_mission: !item.join_mission};
+          index = i
+        }      
+        
+      }) 
+      return [    
+             ...state.slice(0,index),
+              updatedItem,
+              ...state.slice(index+1)
+            ]     
+         
      default:
       return state
   }
