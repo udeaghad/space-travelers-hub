@@ -12,7 +12,6 @@ The project was done Using React documentation, React components, React props an
 - Javascript
 - CSS
 - Redux
-## Live Demo
 
 
 
@@ -49,7 +48,7 @@ Usage
 
 - GitHub: [@Zelalem1222](https://github.com/Zelalem1222)
 - Twitter: [@Zelalem52236790](https://twitter.com/Zelalem52236790)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/zelalem-fissha-52b093231/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/zelalemfissha/)
 
 ## 🤝 Contributing
 
