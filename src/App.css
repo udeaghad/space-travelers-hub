@@ -1,0 +1,90 @@
+.wrapper {
+  display: flex;
+  background-color: gainsboro;
+}
+
+.mission-pg {
+  margin-top: 36px;
+}
+
+.name-cell,
+.mission-header {
+  list-style: none;
+  width: 10%;
+}
+
+.name-cell {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.description-cell,
+.descr-header {
+  list-style: none;
+  width: 59%;
+}
+
+.badge {
+  border: 1px solid gray;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: gray;
+  color: white;
+}
+
+.table-head-wrapper {
+  display: flex;
+  text-align: left;
+}
+
+.status-container {
+  width: 28.5%;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+th,
+td {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+.badge-container,
+.btn-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-container {
+  border-right: 1px solid gray;
+}
+
+.status-header {
+  width: 27%;
+}
+
+.join-btn {
+  width: 9rem;
+  height: 36px;
+}
+
+.leave-btn {
+  width: 9rem;
+  height: 36px;
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+.active-badge {
+  border: 1px solid gray;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  color: white;
+}

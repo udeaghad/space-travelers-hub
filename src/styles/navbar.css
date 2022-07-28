@@ -1,0 +1,36 @@
+#logo {
+  width: 10%;
+}
+
+.website-header {
+  display: flex;
+  gap: 2%;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navItems {
+  display: flex;
+  gap: 10px;
+}
+
+.rocket-link,
+.mission-link,
+.profile-link {
+  list-style: none;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
