@@ -23,29 +23,50 @@ const handleClick = (e) => {
   }
 
 return (
-  <div > 
-       
+  <div className='mission-pg'> 
+     <table>  
+      <thead>
+        <tr className='table-head-wrapper'>
+          <th className='mission-header'>Mission</th>
+          <th className='descr-header'>Description</th>
+          <th className='status-header'>Status</th>
+          
+        </tr>        
+      </thead>
+      <tbody>
+
+      
       {showMission.map(mission => (      
         
-        <ul className='wrapper' key={mission.mission_id}>
-         <li className='name-cell'>{mission.mission_name}</li>
-         <li className='description-cell'>{mission.description}</li> 
+        <tr className='wrapper' key={mission.mission_id} 
+        style={{backgroundColor: mission.join_mission? 'white': null}}>
+         <td className='name-cell'>{mission.mission_name}</td>
+         <td className='description-cell'>{mission.description}</td> 
           {!mission.join_mission?
-          <div>
+          <td className='status-container'>
+          <div className='badge-container'> 
           <span className='badge'>NOT A MEMBER</span>
-          <button type='button' id={mission.mission_id} onClick={(e) => handleClick(e)}>JOIN MISSION</button>
-          </div>: 
-          <div>
-            <span className='badge'>ACTIVE MEMBER</span>
-          <button type='button' id={mission.mission_id} onClick={(e) => handleClick(e)}>LEAVE MISSION</button>
           </div>
+          <div className='btn-container'> 
+          <button className='join-btn' type='button' id={mission.mission_id} onClick={(e) => handleClick(e)}>JOIN MISSION</button>
+          </div>
+          </td>: 
+            <td className='status-container'>
+              <div className='badge-container'> 
+            <span className='active-badge'>ACTIVE MEMBER</span>
+            </div>
+            <div className='btn-container'> 
+          <button className='leave-btn' type='button' id={mission.mission_id} onClick={(e) => handleClick(e)}>LEAVE MISSION</button>
+          </div>
+          </td>
           }
         
-        </ul>
+        </tr>
       
        
         ))}
-   
+        </tbody>
+   </table>
 </div>
 )
 

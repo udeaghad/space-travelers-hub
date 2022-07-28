@@ -1,5 +1,5 @@
 #logo {
-  width: 15%;
+  width: 10%;
 }
 
 .website-header {
@@ -31,4 +31,6 @@ nav {
 
 a {
   text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
 }
