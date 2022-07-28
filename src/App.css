@@ -38,7 +38,7 @@
 }
 
 .status-container {
-  width: 26.5%;
+  width: 28.5%;
   display: flex;
   padding: 0;
   justify-content: center;
@@ -58,8 +58,6 @@ td {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* padding-top: 50%; */
 }
 
 .badge-container {
@@ -67,7 +65,7 @@ td {
 }
 
 .status-header {
-  width: 25%;
+  width: 27%;
 }
 
 .join-btn {

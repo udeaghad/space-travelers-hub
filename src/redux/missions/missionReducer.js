@@ -1,6 +1,6 @@
 const mission = [];
-let updatedItem;
-let index;
+let UpdatedItem = '';
+let Index = '';
 
 export default (state = mission, action) => {
   switch (action.type) {
@@ -9,17 +9,17 @@ export default (state = mission, action) => {
       return action.payload;
 
     case 'JOIN_MISSION':
-
       state.map((item, i) => {
         if (item.mission_id === action.payload) {
-          updatedItem = { ...item, join_mission: !item.join_mission };
-          index = i;
+          UpdatedItem = { ...item, join_mission: !item.join_mission };
+          Index = i;
         }
+        return (UpdatedItem, Index);
       });
       return [
-        ...state.slice(0, index),
-        updatedItem,
-        ...state.slice(index + 1),
+        ...state.slice(0, Index),
+        UpdatedItem,
+        ...state.slice(Index + 1),
       ];
 
     default:
