@@ -26,6 +26,11 @@ const rocketReducer = (state = initialState, action) => {
   }
 };
 
+const fetchRocket = (payload) => ({
+  type: FETCH_ROCKETS,
+  payload,
+});
+
 const fetchRocketsFromApi = () => async (dispatch) => {
   const data = await fetch('https://api.spacexdata.com/v3/rockets');
   const response = await data.json();
@@ -38,11 +43,6 @@ const fetchRocketsFromApi = () => async (dispatch) => {
     reserved: false,
   }))));
 };
-
-const fetchRocket = (payload) => ({
-  type: FETCH_ROCKETS,
-  payload,
-});
 
 const reserveRocket = (id) => ({
   type: RESERVE_ROCKET,

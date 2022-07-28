@@ -15,7 +15,6 @@ const getMissions = createAsyncThunk(
 
     const missionDetails = [];
     result.forEach((mission) => {
-      // const { description, mission_name, mission_id } = mission;
       missionDetails.push({
         description: mission.description,
         mission_name: mission.mission_name,
