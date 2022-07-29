@@ -13,7 +13,9 @@ The project was done Using React documentation, React components, React props an
 - CSS
 - Redux
 
+## Live Demo
 
+[Click to see live demo](https://galaxy-travellers.netlify.app/)
 
 ## Getting Started
 
