@@ -17,8 +17,6 @@ The project was done Using React documentation, React components, React props an
 
 [Click to see live demo](https://galaxy-travellers.netlify.app/)
 
-
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
