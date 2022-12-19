@@ -4,7 +4,7 @@
 
 >In this Project, We worked with the real live data from the SpaceX API. We built a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
-The project was done Using React documentation, React components, React props and React Router. We also connected React and Redux, handled events in a React app, Wrote unit tests with React Testing Library. Styles were applied in the React app and React life cycle methods was also used. We also applied React best practices and language style guides in the code, used store, actions and reducers in React and finally performed a code review for the team member.
+The project was done using React documentation, React components, React props and React Router. We also connected React and Redux, handled events in a React app, and wrote unit tests with React Testing Library. Styles were applied in the React app and React life cycle methods were also used. We also applied React best practices and language style guides in the code, used store, actions and reducers in React, and finally performed a code review for the team member.
 
 ## Built With
 
